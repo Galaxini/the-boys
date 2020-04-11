@@ -1,0 +1,105 @@
+.root-sign-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.image-sign-page {
+    background-image: url(https://source.unsplash.com/collection/578055/1600x900);
+    background-color: #c9c9c9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.paper-sign-page-inner {
+    margin: 64px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar-sign-page {
+    margin: 8px;
+}
+.signin-sign-page-text {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    margin: 0;
+}
+.form-sign-page {
+    width: 100%;
+    margin-top: 8px;
+}
+.copyright-sign-page {
+    margin-top: 40px
+}
+.forgot-dont-sign-page {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.forgot-sign-page {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.dont-sign-page {
+    margin: 0;
+    box-sizing: border-box;
+}
+.copyright-sign-page-text {
+    color: rgba(0, 0, 0, 0.54);
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    margin: 0;
+}
+
+@media (min-width: 960px) {
+    .image-sign-page {
+        flex-grow: 0;
+        max-width: 58.333333%;
+        flex-basis: 58.333333%;
+    }
+    .paper-sign-page {
+        flex-grow: 0;
+        max-width: 41.666667%;
+        flex-basis: 41.666667%;
+    }
+}
+
+@media (max-width: 959px) {
+    .image-sign-page {
+        flex-grow: 0;
+        max-width: 33.333333%;
+        flex-basis: 33.333333%;
+    }
+    .paper-sign-page {
+        max-width: 66.666667%;
+        flex-basis: 66.666667%;
+    }
+}
+
+@media (max-width: 599px) {
+    .image-sign-page {
+        flex-grow: 0;
+        width: 0%;
+        flex-basis: 0%;
+    }
+    .paper-sign-page {
+        flex-grow: 0;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+
