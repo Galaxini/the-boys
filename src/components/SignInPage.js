@@ -82,7 +82,7 @@ const SignPage = inject("mainStore")(
                                     </Button>
                                     <div className="forgot-dont-sign-page">
                                         <div className="forgot-sign-page">
-                                            <Link href="#" variant="body2">
+                                            <Link href="/forgot" variant="body2">
                                                 Forgot password?
                                             </Link>
                                         </div>
