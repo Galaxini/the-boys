@@ -8,7 +8,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import './styles/SignPage.css';
+import './styles/SignInPage.css';
 
 const SignPage = inject("mainStore")(
     observer(
@@ -87,7 +87,7 @@ const SignPage = inject("mainStore")(
                                             </Link>
                                         </div>
                                         <div className="dont-sign-page">
-                                            <Link href="#" variant="body2">
+                                            <Link href="/signup" variant="body2">
                                                 {"Don't have an account? Sign Up"}
                                             </Link>
                                         </div>

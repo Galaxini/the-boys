@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Route, Switch, Redirect, withRouter } from 'react-router-dom'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import { observer, inject } from 'mobx-react'
-import logo from './logo.svg';
 import './App.css';
-import { render } from '@testing-library/react';
-import SignPage from "./components/SignPage"
+import SignInPage from "./components/SignInPage"
+import SignUpPage from "./components/SignUpPage"
 
 const App = inject("mainStore")(
   observer(
@@ -17,7 +16,8 @@ const App = inject("mainStore")(
       render() {
         return (
           <Switch>
-            <Route exact path="/" component={SignPage}/>
+            <Route exact path="/" component={SignInPage}/>
+            <Route exact path="/signup" component={SignUpPage}/>
           </Switch>
         )
       }
