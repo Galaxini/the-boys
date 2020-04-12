@@ -23,7 +23,7 @@ const SignPage = inject("mainStore")(
                 return (
                     <div className="copyright-sign-page-text">
                         {'Copyright © '}
-                        <Link color="inherit" href="https://material-ui.com/">
+                        <Link color="inherit" href="/">
                             The Boys
                         </Link>{' '}
                         {new Date().getFullYear()}
