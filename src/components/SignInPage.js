@@ -19,6 +19,8 @@ const SignPage = inject("mainStore")(
                 };
             }
 
+            
+
             copyRight() {
                 return (
                     <div className="copyright-sign-page-text">
@@ -45,6 +47,13 @@ const SignPage = inject("mainStore")(
                                     Sign in
                                 </div>
                                 <div className="form-sign-page" noValidate>
+                                    <button class="loginBtn loginBtn--facebook">
+                                        Login with Facebook
+                                    </button>
+
+                                    <button class="loginBtn loginBtn--google">
+                                        Login with Google
+                                    </button>
                                     <TextField
                                         variant="outlined"
                                         margin="normal"
